@@ -13,7 +13,6 @@ function HttpRequest(props) {
 
   const searchLocation = async (event) => {
     if (location === "Budapest" || event.key === "Enter") {
-      console.log(location);
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&lang=hu&appid=5df8784b76b421fabc90a1eaf2fac2be`;
 
       setError(null);
@@ -34,7 +33,6 @@ function HttpRequest(props) {
         const responseData = await response.json();
         setData(responseData);
 
-        console.log(responseData);
       } catch (error) {
         setError(error.message);
       }
@@ -54,8 +52,10 @@ function HttpRequest(props) {
       <div className="container">
         <div className="top">
           <LocTempBlock data={data}></LocTempBlock>
+          <div className="block">
           <WeatherIcon data={data}></WeatherIcon>
           <Sunrise_Sunset data={data}></Sunrise_Sunset>
+          </div>
         </div>
         <OtherWeatherData data={data}></OtherWeatherData>
       </div>

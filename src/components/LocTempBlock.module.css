@@ -8,10 +8,39 @@
     padding: 1rem;
     border-radius: 12px;
     background-color: rgb(255, 255, 255, 0.2);
+    margin: auto;
   }
 
   
 .description {
     position: relative;
     font-size: 1.5rem;
+    padding: 2rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .location {
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+  
+    .description {
+      position: relative;
+      font-size: 1.2rem;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .locTempBlock {
+      width: 350px;
+      height: 300px;
+      padding: 1rem;
+      border-radius: 12px;
+      background-color: rgb(255, 255, 255, 0.2);
+      margin-bottom: 2rem;
+    }
+    .temp{
+      text-align: center;
+    }
   }

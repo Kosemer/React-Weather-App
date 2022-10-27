@@ -1,13 +1,4 @@
-.iconSunBlock {
-  position: relative;
-  height: 300px;
-  width: 50%;
-  border-radius: 12px;
-  background-color: rgb(255, 255, 255, 0.2);
-  right: -60%;
-}
-
 .weatherIcon {
-
+  margin-top: -2rem;
   padding-left: 4rem;
 }

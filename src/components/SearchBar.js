@@ -6,7 +6,7 @@ function SearchBar(props) {
         type="text"
         onChange={(event) => props.setLocation(event.target.value)}
         onKeyPress={props.searchLocation}
-        placeholder="Enter location"
+        placeholder="Enter city"
       ></input>
     </div>
   );
