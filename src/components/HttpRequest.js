@@ -32,6 +32,7 @@ function HttpRequest(props) {
 
         const responseData = await response.json();
         setData(responseData);
+        console.log(responseData)
 
       } catch (error) {
         setError(error.message);

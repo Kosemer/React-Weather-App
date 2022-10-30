@@ -7,6 +7,7 @@ function SearchBar(props) {
         onChange={(event) => props.setLocation(event.target.value)}
         onKeyPress={props.searchLocation}
         placeholder="Enter city"
+        autoFocus
       ></input>
     </div>
   );
